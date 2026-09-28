@@ -1,2 +1,8 @@
-# Display escape characters
-print ("\t \"I am programming!\" ")
+# Display a box
+print ("##########")
+print ("#        #")
+print ("#  #  #  #")
+print ("#        #")
+print ("# ------ #")
+print ("##########")
+
