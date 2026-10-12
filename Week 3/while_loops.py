@@ -1,8 +1,6 @@
-print ("How many Obstacles should I avoid?")
-Obstacles = int(input())
-count = 1
-while count <= Obstacles:
-    print("Avoiding...", end ="")
-    print (f"Done! {count} Obstacles avoided.")
-    count += 1
-print ("All obstacles have been avoided!")
+print ("How many bars should be charged?")
+bars = int(input())
+bars_charged = 0
+while bars_charged < bars:
+    bars_charged += 1
+    print (f"Charging:")
