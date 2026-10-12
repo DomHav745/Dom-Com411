@@ -1,5 +1,8 @@
-print("How many Apples should I remove?")
-Apples = int(input())
-while Apples > 0:
-    print("Removed Apple")
-    Apples = Apples - 1
+print ("How many Obstacles should I avoid?")
+Obstacles = int(input())
+count = 1
+while count <= Obstacles:
+    print("Avoiding...", end ="")
+    print (f"Done! {count} Obstacles avoided.")
+    count += 1
+print ("All obstacles have been avoided!")
