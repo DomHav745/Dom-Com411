@@ -1,8 +1,9 @@
 def directions():
-    steps = ["Move Forward" "Move Backward" "Turn Left" "Turn Right"]
-    return steps
+    directions = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
+    return directions
 
-def run_task1():
-    steps = (directions())
-    print(steps)
-    return steps
+def run():
+    print(directions())
+
+if __name__ == "__main__":
+    run()
