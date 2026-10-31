@@ -1,8 +1,8 @@
-print("Program Started")
-print ("Please enter a standard character")
-character = input()
-if len(character) == 1:
-    print(f"The ASCII code for {character} is {ord(character)}")
+print("Program Started!")
+print("Please enter an ASCII code")
+Number = int(input())
+if Number >= 32 and Number <= 126:
+    print(f"The character represented by the ASCII value {Number} is {chr(Number)}")
 else:
-    print("Error! Input must be 1 character")
-print("Program Ended!")
+    print("The character cannot be displayed")
+print("The program has ended")
