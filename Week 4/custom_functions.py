@@ -1,7 +1,13 @@
-def climb_ladder(steps_remaining, steps_crossed):
-    if steps_remaining < steps_crossed:
-        print("Still some ways to go...")
-    else:
-        print("We're almost there!")
-climb_ladder(5, 2)
-climb_ladder(3, 5)
+def display_ladder(steps):
+    for step in range(steps):
+        print("| |")
+        print("---")
+
+    print("| |")
+
+def create_ladder():
+        print("How many steps?")
+        steps = int(input())
+        display_ladder(steps)
+
+create_ladder()
