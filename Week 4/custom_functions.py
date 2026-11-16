@@ -1,8 +1,8 @@
-print("Programme Started")
-print("Please enter a character")
-character = input()
-if len(character) == 1:
-    print(f"The ASCII code for {character} is: {ord(character)}")
+print("Program Started")
+print("Please enter an ASCII code")
+code = int(input())
+if code >= 32 and code <= 126:
+    print(f"The character represented by the ASCII code {code} is {chr(code)}")
 else:
-    print("Error. Only 1 character required")
+    print("Error. Please enter a number between 32 and 126")
 print("Program Ended")
