@@ -1,5 +1,8 @@
-def listen():
-    print("Did you hear that sound?")
-    sound = input()
-    print(f"That was a loud {sound}")
-listen()
+def identify():
+    print("What can you see?")
+    See = input()
+    if See == "A Large Boulder":
+        print("We gotta run!")
+    else:
+        print("We'll be fine...")
+identify()
