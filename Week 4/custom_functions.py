@@ -1,9 +1,7 @@
-def cross_bridge(steps):
-    for step in range(steps):
-        print("Crossed step")
-    if steps >= 5:
-        print("The bridge is collapsing!!")
+def climb_ladder(steps_remaining, steps_crossed):
+    if steps_remaining < steps_crossed:
+        print("Still some ways to go...")
     else:
-        print("We need to keep going!")
-cross_bridge(3)
-cross_bridge(6)
+        print("We're almost there!")
+climb_ladder(5, 2)
+climb_ladder(3, 5)
