@@ -7,8 +7,15 @@ def menu():
     directions = movement()
     for index in range(len(directions)):
         print(f"{index}: {directions[index]}")
+    index = int(input())
+    return directions[index]
+
 def run():
-    menu()
+    route = []
+    print("Working out escape route...")
+    for count in range(5):
+        route.append(menu())
+    print(f"Escape route: {route}")
 
 if __name__ == "__main__":
     run()
