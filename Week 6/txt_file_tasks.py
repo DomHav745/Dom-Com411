@@ -1,5 +1,12 @@
-def display_chars():
-    with open("library.txt", "r") as file:
-        print(file.readlines(0))
+import os
+def cwd():
+    path = os.getcwd()
+    print(f"Current working directory is {path}")
+    print(f"Directory contains the following files: {os.listdir(path)}")
 
-display_chars()
+def run():
+    print("Processing")
+    cwd()
+
+if __name__ == "__main__":
+    run()
